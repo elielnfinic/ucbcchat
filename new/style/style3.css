@@ -1,0 +1,9 @@
+#pageOptions{
+	background:url("../img/background.png") center;
+}
+
+#pageOptions #principalOptions h4{
+	background:rgb(192,221,173);
+	color:black;
+	
+}

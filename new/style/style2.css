@@ -1,0 +1,105 @@
+#principalchat{
+	background:url("../img/background.png") center;
+}
+
+#principalchat #zoneChat{
+}
+
+#principalchat #zoneChat #identiteCorrespondant{
+	background:rgba(100,170,100,0.6);
+	color:white;
+}
+
+#principalchat #zoneChat #identiteCorrespondant #idPropre{
+		
+}
+
+#principalchat #zoneChat #identiteCorrespondant #statut{
+	float:right;
+	color:white;
+	background:black;
+	border-radius:20px;
+	height:0.5cm;
+}
+
+#principalchat #zoneChat #outils{
+	background:white;
+}
+
+#principalchat #zoneChat #outils a{
+	
+}
+
+#principalchat #zoneChat #messageAuCorrespondant{
+	border-radius:10px;
+}
+
+#principalchat #zoneChat #messageAuCorrespondant .unMessage{
+	background:#808080;
+	margin-top:20px;
+	border-radius:5px;
+	width:80%;
+}
+
+#principalchat #zoneChat #messageAuCorrespondant .moi{
+	margin-left:20%;
+	margin-right:5%;
+	/*background:url("../img/backChat.png") repeat;*/
+	background:rgb(192,221,173);
+	color:black;
+}
+
+#principalchat #zoneChat #messageAuCorrespondant .correspondant{
+	background:white;
+	margin-left:5%;
+}
+
+#principalchat #zoneChat #messageAuCorrespondant .unMessage .statutImage{
+	width:15px;
+	height:15px;
+	border-radius:10px;
+}
+
+
+#principalchat #zoneChat #messageAuCorrespondant .unMessage  .laDate{
+	font-size:10px;
+	color:gray;
+	font-family:monotype corsiva;
+}
+
+#principalchat #zoneChat #anciensMessages .moi{
+	margin-left:20%;
+	margin-right:5%;
+	/*background:url("../img/backChat.png") repeat;*/
+	background:rgb(192,221,173);
+	color:black;
+}
+
+#principalchat #zoneChat #anciensMessages .correspondant{
+	/*background:url("../img/backChat1.png") repeat;*/
+	background:white;
+	margin-left:5%;
+}
+
+#principalchat #zoneChat #anciensMessages .unMessage{
+	margin-top:20px;
+	border-radius:5px;
+	width:80%;
+}
+
+#principalchat #zoneChat #anciensMessages .unMessage .laDate{
+	font-size:10px;
+	color:gray;
+	font-family:monotype corsiva;
+}
+
+
+#principalchat #zoneChat #anciensMessages .unMessage .statutImage{
+	width:15px;
+	height:15px;
+	border-radius:10px;
+}
+
+#principalchat #zoneChat #anciensMessages{
+	
+}

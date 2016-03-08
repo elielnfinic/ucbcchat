@@ -1,0 +1,124 @@
+<!doctype html>
+	<html>
+		<head>
+			<title>UCBC-Chat</title>
+		</head>
+		<body>
+			<style type="text/css">@import url("libs/jquery.mobile-1.4.5.css");</style>
+			<style type="text/css">@import url("libs/jquery-ui-themes-1.8.18/themes/le-frog/jquery.ui.accordion.css");</style>
+			<style type="text/css">@import url("style/style3.css");</style>
+			<div data-role="page" id="pageOptions">
+				<div data-role="header" data-position="fixed"><h1>ucbcChat+</h1>
+					<a data-rel="back" class="ui-btn ui-icon-back ui-btn-icon-center ui-btn-icon-notext">Back</a>
+				 </div>
+				<div data-role="main" id="principalOptions">
+					<div id="accord">
+						<h4>Aide</h4>
+						<div id="aide">
+							Bienvenu dans ucbcChat, une application simple &agrave; utiliser							
+							
+								<h4>Creer un compte</h4>
+								<p>
+								Premi&egrave;re &eacute;tape, rassurez-vous que vous avez d&eacute;j&agrave; ouvert un compte 
+								dans la biblioth&egrave;que virtuelle. Si cela est fait, vous utiliserez chaque fois votre mot 
+								de passe et votre numero matricule pour vous connecter.
+								</p>
+								
+								<h4>&Eacute;crire un message</h4>
+								<div>
+								<a data-position-to="origin" class="ui-btn ui-icon-comment ui-btn-icon-center ui-btn-icon-notext">Les autres</a>
+								Rassurez vous d'abord que vous avec d&eacute;j&agrave; choisi un correspondant. Cliquez alors sur l'ic&ocirc;ne 
+								de message pour &eacute;crire un message.
+								Les messages &eacute;chang&eacute;es entre vous et lui seront vus sur cette page.
+								</div>
+							
+							
+								<h4>Voir les &eacute;tudiants</h4>
+								<div>
+								<a data-position-to="origin" class="ui-btn ui-icon-user ui-btn-icon-center ui-btn-icon-notext">Les autres</a>
+								Cliquez sur les autres, pour voir tous les &eacute;diants de l'UCBC et en cliquant sur le nom d'un 
+								des &eacute;tudiants, vous pourez commencez &agrave; discuter avec lui en cliquant sur la petite ic&ocirc;ne 
+								de message.
+								</div>
+							
+							
+								<h4>Correspondants r&eacute;cents</h4>
+								<p>
+								<a data-position-to="origin" class="ui-btn ui-icon-clock ui-btn-icon-center ui-btn-icon-notext">Les autres</a>
+								Cliquez sur l'ic&ocirc;ne de l'horloge pour voir ceux avec qui vous avez communiqu&eacute;, il n'y a pas longtemps.
+								</p>
+							
+							
+								<h4>Correspondants connect&eacute;s</h4>
+								<p>
+								<a data-position-to="origin" class="ui-btn ui-icon-eye ui-btn-icon-center ui-btn-icon-notext">Les autres</a>
+								Cliquez sur l'ic&ocirc;ne de l'oeil pour voir les &eacute;tudiants qui sont maintenant en ligne.
+								</p>
+						</div>
+						<!--
+						<h4>Configuration</h4>
+						<div>
+							Adresse du serveur
+							<input type="text" id="nouvelAdresse"/>
+							<button type="button" onclick="changerAdresseServeur();">Changer l'adresse</button>
+						</div>
+						-->
+						<h4>ucbcChat</h4>
+						<div>
+							<p>
+								ucbcChat est une application qui a &eacute;t&eacute; con&ccedil;ue en vue 
+								de permettre aux &eacute;tudiants de l'Universit&eacute; Chr&eacute;tienne 
+								Bilingue du Congo(UCBC) d'&eacute;changer des messages sur le campus.
+							</p>
+							
+							<p>
+								Cette application devra &ecirc;tre utilis&eacute;e dans un but d'&eacute;changes
+								 qui respectent le manuel de l'&eacute;tudiant.
+							</p>
+							
+							<p>
+								Pour le moment, l'application est gratuite et peut donc &ecirc;tre partag&eacute;e.
+							</p>
+						</div>
+						
+						<h4>A propos</h4>
+						<div>
+							Cette application a &eacute;t&eacute; d&eacute;velopp&eacute;e par Mathe Eliel.<br/>
+							Contactez-moi par ces adresses:
+							<ul>
+								<li>elimek2@gmail.com</li>
+								<li>Facebook: Mathe Eliel</li>
+								<li>Whatsapp: +243 998 955 302</li>
+							</ul>
+							
+							Mes remerciements s'adressent &agrave;:
+							<ul>
+								<li>l'&eacute;quipe IT de l'UCBC</li>
+								<li>aux membres du groupe Deonz</li>
+								<li>Sifa Sikumbili</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div data-role="footer" data-position="fixed">
+				
+				 
+			</div>
+				<script type="text/javascript" src="libs/jquery-2.1.1.min.js"></script>
+				<script type="text/javascript" src="libs/jquery-ui.js"></script>
+				<script type="text/javascript" src="libs/jquery.mobile-1.4.5.js"></script>
+				<script type="text/javascript">
+					function changerAdresseServeur(){
+						if(confirm("Etes vous sur de changer l'adresse du serveur?")){
+							if($("#nouvelAdresse").val() != ""){
+								window.localStorage.setItem("serveur",$("#nouvelAdresse").val());
+							}
+						}
+					}
+					$("#accord").accordion({collapsible:true});
+					$("#accord div").css("height","6cm");
+					$("#aide").accordion({collapsible:true});
+				</script>
+		</body>
+	</html>
